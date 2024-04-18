@@ -349,10 +349,23 @@ public class calculator extends AppCompatActivity {
             public void onClick(View v) {
                 goodtogo = true;
                 TextView textview2 = findViewById(R.id.textView2);
-                if((textview2.getText().toString().length() != 0) && (textview2.getText().charAt(textview2.getText().length() - 1) == '+' || textview2.getText().charAt(textview2.getText().length()-1) == '-' || textview2.getText().charAt(textview2.getText().length()-1) == '*' || textview2.getText().charAt(textview2.getText().length()-1) == '/') && ( btn18.getText().charAt(0) == '+' || btn18.getText().charAt(0) == '-' || btn18.getText().charAt(0) == '*' || btn18.getText().charAt(0) == '/' || textview2.getText().charAt(textview2.getText().length()-1) == '.')) {
-                    String cutstring = textview2.getText().toString().substring(0,textview2.getText().toString().length()-1);
+                if(textview2.getText().toString().length() == 0){
+                    return;
+                }
+                if(((textview2.getText().toString().length() != 0) && (textview2.getText().charAt(textview2.getText().length() - 1) == '+' || textview2.getText().charAt(textview2.getText().length()-1) == '-' || textview2.getText().charAt(textview2.getText().length()-1) == '*' || textview2.getText().charAt(textview2.getText().length()-1) == '/' || textview2.getText().charAt(textview2.getText().length()-1) == '.'))) {
+                    /*String cutstring = textview2.getText().toString().substring(0,textview2.getText().toString().length()-1);
                     cutstring+=btn18.getText().toString();
                     textview2.setText(cutstring);
+                     */
+                    String cutstring = textview2.getText().toString().substring(0,textview2.getText().toString().length()-1);
+                    textview2.setText(cutstring);
+
+                    EditText pastehere = (EditText) findViewById(R.id.editTextNumberDecimal);
+
+                    MyClalcClass calculate = new MyClalcClass();
+                    pastehere.setText(calculate.evaluateMDAS((String) textview2.getText())+"");
+                    textview2.setText("");
+
                 }
                 else{
                     /*String newstring = (String) textview2.getText();
@@ -363,7 +376,7 @@ public class calculator extends AppCompatActivity {
 
                     MyClalcClass calculate = new MyClalcClass();
                     pastehere.setText(calculate.evaluateMDAS((String) textview2.getText())+"");
-                    textview2.setText(" ");
+                    textview2.setText("");
 
                 }
             }

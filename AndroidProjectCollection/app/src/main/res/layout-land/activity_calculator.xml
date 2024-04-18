@@ -53,6 +53,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#020202"
                     android:text="7"
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
                 <Button
@@ -62,6 +63,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#020202"
                     android:text="8"
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
                 <Button
@@ -71,6 +73,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#020202"
                     android:text="9"
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
                 <Button
@@ -95,6 +98,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#020202"
                     android:text="4"
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
                 <Button
@@ -104,6 +108,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#020202"
                     android:text="5"
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
                 <Button
@@ -113,6 +118,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#020202"
                     android:text="6"
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
                 <Button
@@ -137,6 +143,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#020202"
                     android:text="1"
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
                 <Button
@@ -146,6 +153,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#020202"
                     android:text="2"
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
                 <Button
@@ -155,6 +163,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#020202"
                     android:text="3"
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
                 <Button
@@ -179,6 +188,7 @@
                     android:layout_weight="1"
                     android:backgroundTint="#020202"
                     android:text="."
+                    android:textColor="#FFFFFF"
                     android:textSize="20sp" />
 
                 <Button
@@ -187,7 +197,8 @@
                     android:layout_height="70dp"
                     android:layout_weight="1"
                     android:backgroundTint="#020202"
-                    android:text="0" />
+                    android:text="0"
+                    android:textColor="#FFFFFF" />
 
                 <Button
                     android:id="@+id/button17"
