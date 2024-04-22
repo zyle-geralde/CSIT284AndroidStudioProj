@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
 
         Button btn55 = (Button)findViewById(R.id.button55);
 
@@ -71,5 +72,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+=======
+>>>>>>> ac282354dec3a570b9d1804d6b53f73df0b1d5f6
     }
 }
